@@ -1,0 +1,153 @@
+.materias {
+  background: #e9e9e9;
+  color: #181c19;
+}
+
+.materias-container {
+  max-width: 1200px;
+  /*Não deixar que o conteudo se expande*/
+  padding: 120px 20px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 2.5fr 3.5fr;
+  gap: 100px;
+  position: relative;
+}
+
+.materias-container::after {
+  display: block;
+  content: "";
+  width: 130px;
+  height: 100px;
+  background: url("../img/Detalhe.svg") no-repeat center;
+  position: absolute;
+  bottom: -50px;
+  left: 20px;
+}
+
+.materias .subtitulo {
+  color: #cccccc;
+  max-width: 5ch;
+  max-width: 5ch;
+}
+
+.materias-texto {
+  font-size: 1.5rem;
+  line-height: 1.33;
+  max-width: 40ch;
+  margin-bottom: 60px;
+  color: #7a7a7a;
+}
+
+.materias-texto strong {
+  color: #525252;
+}
+
+.modulo-lista {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  margin-bottom: 60px;
+}
+
+.modulo {
+  flex: 1;
+  background: #181c19;
+  padding: 20px;
+  border-radius: 4px;
+  display: flex;
+  flex-direction: column;
+}
+
+.modulo-tipo {
+  font-size: 0.875rem;
+  text-transform: uppercase;
+  color: #8f8f8f;
+  margin-bottom: 10px;
+}
+
+.modulo-materia {
+  flex: 1;
+  font-size: 1.125rem;
+  line-height: 1.4;
+  margin-bottom: 40px;
+  color: #ffffff;
+  position: relative;
+}
+
+.modulo-materia::before {
+  content: "";
+  display: block;
+  width: 4px;
+  height: 20px;
+  background: linear-gradient(#00a124, #007b1b);
+  position: absolute;
+  left: -24px;
+}
+
+.modulo-duracao {
+  font-size: 1.125rem;
+  color: #8f8f8f;
+}
+
+.disciplina {
+  margin-bottom: 60px;
+}
+
+.materias-extra h3 {
+  font-size: 0.875rem;
+  line-height: 1.4;
+  color: #525252;
+  text-transform: uppercase;
+  margin-bottom: 30px;
+  position: relative;
+}
+
+.materias-extra h3::before {
+  display: block;
+  content: "";
+  width: 36px;
+  height: 39px;
+  position: absolute;
+  left: -40px;
+  top: -10px;
+}
+
+.disciplina h3::before {
+  background: url("../img/curso.svg") no-repeat center center;
+}
+
+.curiosidades h3::before {
+  background: url("../img/curiosidade.svg") no-repeat center center;
+}
+
+.materias-extra li {
+  font-size: 1.125rem;
+  line-height: 1.1;
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: space-between;
+  font-weight: 700;
+}
+
+.materias-extra span {
+  color: #525252;
+}
+
+@media (max-width: 880px) {
+  .materias-container {
+    grid-template-columns: 1fr;
+    padding: 60px 20px;
+    gap: 40px;
+  }
+  .materias .subtitulo {
+    color: #000000;
+  }
+  .materias-texto {
+    font-size: 1.125rem;
+  }
+  .materias-extra h3::before {
+    position: initial;
+    margin-bottom: 10px;
+  }
+}
