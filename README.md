@@ -9,6 +9,8 @@ Hello Dev! Bem vindo(a) ao projeto eletroeletrônica. :facepunch:
 -   **OBJETIVO:** 
   Apenas uma landing page, para práticar conceitos de posicionamentos dos elementos, organição e designer.  :blush:
 
+  :point_right: Acesse o Projeto: https://github.com/alvesmanuela/Projeto-Eletroeletronica
+
 
 
 
